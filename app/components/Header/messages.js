@@ -12,11 +12,11 @@ export default defineMessages({
   },
   features: {
     id: 'boilerplate.components.Header.features',
-    defaultMessage: 'Features',
+    defaultMessage: 'Papers',
   },
   template: {
     id: 'boilerplate.components.Header.template',
-    defaultMessage: 'Template',
+    defaultMessage: 'Inputs',
   },
   default: {
     id: 'boilerplate.components.Header.default',

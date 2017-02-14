@@ -7,6 +7,7 @@
 import React from 'react';
 import { FormattedMessage } from 'react-intl';
 
+import A from 'components/A';
 import Img from './Img';
 import NavBar from './NavBar';
 import HeaderLink from './HeaderLink';
@@ -17,17 +18,17 @@ class Header extends React.Component { // eslint-disable-line react/prefer-state
   render() {
     return (
       <div>
-        <a href="https://github.com/paulojblack">
+        <A href="https://github.com/paulojblack">
           <Img src={Banner} alt="logo banner" />
-        </a>
+        </A>
         <NavBar>
           <HeaderLink to="/">
             <FormattedMessage {...messages.home} />
           </HeaderLink>
-          <HeaderLink to="/features">
+          <HeaderLink to="/papers">
             <FormattedMessage {...messages.features} />
           </HeaderLink>
-          <HeaderLink to="/template">
+          <HeaderLink to="/inputs">
             <FormattedMessage {...messages.template} />
           </HeaderLink>
           <HeaderLink to="/default">
