@@ -20,7 +20,14 @@ const ListWrapper = styled(Section)`
 
 const ListExampleWrapper = styled(ExampleWrapper)`
   padding-top: 2em;
+  width: 50%
 `;
+
+const CarouselSettings = {
+    autoplay: true,
+    autoplayInterval: 2000,
+    wrapAround: true,
+};
 
 export function ListSection() {
     return (
@@ -35,7 +42,7 @@ export function ListSection() {
         </TextWrapper>
 
         <ListExampleWrapper>
-          <Carousel>
+          <Carousel {...CarouselSettings}>
             <ListScroll />
             <ListStatic />
           </Carousel>

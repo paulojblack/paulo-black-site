@@ -9,69 +9,45 @@ import messages from './messages';
 
 const ListWrapper = styled.ul`
   font-family: Georgia, Times, 'Times New Roman', serif;
-  padding-left: 1em;
+
 `;
 
 export function ListStatic() {
     return (
       <section>
+
         <H1>
           <FormattedMessage {...messages.staticHeader} />
         </H1>
+
         <ListWrapper>
           <ListItem>
             <ListItemTitle>
               <FormattedMessage {...messages.pointHeader} />
             </ListItemTitle>
             <p>
-              <FormattedMessage {...messages.pointMessage} />
+              <FormattedMessage {...messages.staticPointMessage} />
             </p>
           </ListItem>
 
           <ListItem>
             <ListItemTitle>
-              <FormattedMessage {...messages.enumerateHeader} />
+              <FormattedMessage {...messages.pointHeader} />
             </ListItemTitle>
             <p>
-              <FormattedMessage {...messages.enumerateMessage} />
+              <FormattedMessage {...messages.staticPointMessage} />
             </p>
           </ListItem>
 
           <ListItem>
             <ListItemTitle>
-              <FormattedMessage {...messages.furthermoreHeader} />
+              <FormattedMessage {...messages.pointHeader} />
             </ListItemTitle>
             <p>
-              <FormattedMessage {...messages.furthermoreMessage} />
+              <FormattedMessage {...messages.staticPointMessage} />
             </p>
           </ListItem>
 
-          <ListItem>
-            <ListItemTitle>
-              <FormattedMessage {...messages.matterOfFactHeader} />
-            </ListItemTitle>
-            <p>
-              <FormattedMessage {...messages.matterOfFactMessage} />
-            </p>
-          </ListItem>
-
-          <ListItem>
-            <ListItemTitle>
-              <FormattedMessage {...messages.extravaganceHeader} />
-            </ListItemTitle>
-            <p>
-              <FormattedMessage {...messages.extravaganceMessage} />
-            </p>
-          </ListItem>
-
-          <ListItem>
-            <ListItemTitle>
-              <FormattedMessage {...messages.conclusionsHeader} />
-            </ListItemTitle>
-            <p>
-              <FormattedMessage {...messages.conclusionsMessage} />
-            </p>
-          </ListItem>
         </ListWrapper>
       </section>
     );
