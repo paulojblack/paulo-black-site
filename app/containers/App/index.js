@@ -14,17 +14,23 @@ import Header from 'components/Header';
 import Footer from 'components/Footer';
 import withProgressBar from 'components/ProgressBar';
 
-// old   max-width: calc(768px + 16px * 2);
+// old   max-width: calc(1100px + 16px * 2);
+// padding: 0 16px;
 const AppWrapper = styled.div`
-  max-width: calc(1100px + 16px * 2);
   margin: 0 auto;
   display: flex;
   min-height: 100%;
-  padding: 0 16px;
   flex-direction: column;
 `;
 
 export function App(props) {
+  const pathname = props.location.pathname;
+  // let showHeader = true;
+  //
+  // if (pathname === '/') {
+  //   showHeader = false;
+  // }
+
   return (
     <AppWrapper>
       <Helmet
@@ -34,7 +40,10 @@ export function App(props) {
           { name: 'description', content: 'Paulo\'s boilerplate' },
         ]}
       />
-      <Header />
+      {/* Hacky, fixit */}
+      <div style={{ display: pathname !== '/' ? 'inherit' : 'none' }}>
+        <Header />
+      </div>
       {React.Children.toArray(props.children)}
       <Footer />
     </AppWrapper>
@@ -43,6 +52,7 @@ export function App(props) {
 
 App.propTypes = {
   children: React.PropTypes.node,
+  location: React.PropTypes.object,
 };
 
 export default withProgressBar(App);

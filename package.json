@@ -118,7 +118,7 @@
       "import/no-unresolved": 2,
       "import/prefer-default-export": 0,
       "indent": [
-        4,
+        0,
         4,
         {
           "SwitchCase": 1

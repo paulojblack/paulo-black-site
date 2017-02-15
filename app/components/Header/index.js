@@ -14,7 +14,13 @@ import HeaderLink from './HeaderLink';
 import Banner from './mockbanner.png';
 import messages from './messages';
 
+// rm export
 class Header extends React.Component { // eslint-disable-line react/prefer-stateless-function
+  // Used for dynamic display
+  // constructor(props) {
+  //   super(props);
+  // }
+
   render() {
     return (
       <div>
