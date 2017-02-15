@@ -20,17 +20,17 @@ function Toggle(props) {
   }
 
   return (
-    <Select value={props.value} onChange={props.onToggle}>
-      {content}
-    </Select>
+      <Select value={props.value} onChange={props.onToggle}>
+        {content}
+      </Select>
   );
 }
 
 Toggle.propTypes = {
-  onToggle: React.PropTypes.func,
-  values: React.PropTypes.array,
-  value: React.PropTypes.string,
-  messages: React.PropTypes.object,
+    onToggle: React.PropTypes.func,
+    values: React.PropTypes.array,
+    value: React.PropTypes.string,
+    messages: React.PropTypes.object,
 };
 
 export default Toggle;

@@ -6,14 +6,14 @@
 import { defineMessages } from 'react-intl';
 
 export default defineMessages({
-  licenseMessage: {
-    id: 'boilerplate.components.Footer.license.message',
-    defaultMessage: 'This is a generic front end boilerplate initialized with react-boilerplate',
-  },
-  authorMessage: {
-    id: 'boilerplate.components.Footer.author.message',
-    defaultMessage: `
-      Made by {author}.
-    `,
-  },
+    descriptionMessage: {
+        id: 'boilerplate.components.Footer.license.message',
+        defaultMessage: 'Oh boy a footer! It\'s not sticky though so cram in that content!',
+    },
+    authorMessage: {
+        id: 'boilerplate.components.Footer.author.message',
+        defaultMessage: `
+          Made by {author}
+        `,
+    },
 });

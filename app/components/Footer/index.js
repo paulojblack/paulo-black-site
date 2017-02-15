@@ -1,10 +1,5 @@
-/**
-*
-* Footer
-*
-*/
-
 import React from 'react';
+import styled from 'styled-components';
 import { FormattedMessage } from 'react-intl';
 
 import A from 'components/A';
@@ -12,25 +7,33 @@ import LocaleToggle from 'containers/LocaleToggle';
 import Wrapper from './Wrapper';
 import messages from './messages';
 
+const Section = styled.section`
+  max-width: 300px
+`;
+
+const LinkSection = styled.section`
+  padding-right: 11em;
+`;
+
 function Footer() {
-  return (
-    <Wrapper>
-      <section>
-        <FormattedMessage {...messages.licenseMessage} />
-      </section>
-      <section>
-        <LocaleToggle />
-      </section>
-      <section>
-        <FormattedMessage
-          {...messages.authorMessage}
-          values={{
-            author: <A href="https://github.com/paulojblack">Paulo Black</A>,
-          }}
-        />
-      </section>
-    </Wrapper>
-  );
+    return (
+      <Wrapper>
+        <Section>
+          <FormattedMessage {...messages.descriptionMessage} />
+        </Section>
+        <LinkSection>
+          <FormattedMessage
+            {...messages.authorMessage}
+            values={{
+                author: <A href="https://github.com/paulojblack">Paulo Black</A>,
+            }}
+          />
+        </LinkSection>
+        <Section>
+          <LocaleToggle />
+        </Section>
+      </Wrapper>
+    );
 }
 
 export default Footer;

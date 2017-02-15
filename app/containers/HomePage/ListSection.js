@@ -20,12 +20,12 @@ const ListWrapper = styled(Section)`
 
 const ListExampleWrapper = styled(ExampleWrapper)`
   padding-top: 2em;
-  width: 50%
+  width: 50%;
 `;
 
 const CarouselSettings = {
     autoplay: true,
-    autoplayInterval: 2000,
+    autoplayInterval: 5000,
     wrapAround: true,
 };
 
