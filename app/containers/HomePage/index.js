@@ -5,13 +5,11 @@
  */
 
 import React from 'react';
-import { FormattedMessage } from 'react-intl';
 import Helmet from 'react-helmet';
 
-import H1 from 'components/H1';
-import CenteredSection from './CenteredSection';
+import IntroSection from './IntroSection';
 import HeaderSection from './HeaderSection';
-import messages from './messages';
+import ListSection from './ListSection';
 
 export default class HomePage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
     render() {
@@ -23,18 +21,11 @@ export default class HomePage extends React.PureComponent { // eslint-disable-li
                 { name: 'description', content: 'A React.js Boilerplate application homepage' },
               ]}
             />
-            <div>
-              <CenteredSection>
-                <H1>
-                  <FormattedMessage {...messages.introHeader} />
-                </H1>
-                <p>
-                  <FormattedMessage {...messages.introBody} />
-                </p>
-              </CenteredSection>
-              <HeaderSection />
-            </div>
+            <IntroSection />
+            <HeaderSection />
+            <ListSection />
+
           </article>
-    );
-  }
+        );
+    }
 }

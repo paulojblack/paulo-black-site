@@ -8,8 +8,7 @@ import React, { PropTypes } from 'react';
 import { connect } from 'react-redux';
 import Helmet from 'react-helmet';
 
-import ListStatic from './ListStatic';
-import ListScroll from './ListScroll';
+import { ListStatic, ListScroll } from 'components/List';
 import Wrapper from './Wrapper';
 
 export class Papers extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function

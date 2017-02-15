@@ -41,7 +41,7 @@ export function App(props) {
         ]}
       />
       {/* Hacky, fixit */}
-      <div style={{ display: pathname !== '/' ? 'inherit' : 'none' }}>
+      <div style={{ display: pathname !== '/' ? 'block' : 'none' }}>
         <Header />
       </div>
       {React.Children.toArray(props.children)}

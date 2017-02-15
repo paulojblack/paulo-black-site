@@ -33,4 +33,16 @@ export default defineMessages({
     to see more examples.
     `,
   },
+  listHeader: {
+    id: 'app.components.HomePage.list.header',
+    defaultMessage: `
+    Lists and Columns
+    `,
+  },
+  listBody: {
+    id: 'app.components.HomePage.list.body',
+    defaultMessage: `
+    Static lists, scrolling lists, interactive lists and data driven columns.
+    `,
+  },
 });

@@ -1,12 +1,10 @@
 import styled from 'styled-components';
 
 const Section = styled.section`
-  margin: 3em auto;
   min-height: 500px;
-  &:first-child {
-    margin-top: 0;
-  }
-
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
 `;
 
 export default Section;

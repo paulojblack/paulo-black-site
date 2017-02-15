@@ -9,30 +9,16 @@ import messages from './messages';
 
 const ListWrapper = styled.ul`
   font-family: Georgia, Times, 'Times New Roman', serif;
-  height: 300px;
-  overflow: scroll;
-
-  border-radius: 33px;
-  border: 4px solid #211f80;
+  padding-left: 1em;
 `;
 
-export function List() {
+export function ListStatic() {
     return (
       <section>
         <H1>
-          <FormattedMessage {...messages.scrollHeader} />
+          <FormattedMessage {...messages.staticHeader} />
         </H1>
         <ListWrapper>
-
-          <ListItem>
-            <ListItemTitle>
-              <FormattedMessage {...messages.scrollPointHeader} />
-            </ListItemTitle>
-            <p>
-              <FormattedMessage {...messages.scrollPointMessage} />
-            </p>
-          </ListItem>
-
           <ListItem>
             <ListItemTitle>
               <FormattedMessage {...messages.pointHeader} />
@@ -92,4 +78,4 @@ export function List() {
 }
 
 
-export default List;
+export default ListStatic;
