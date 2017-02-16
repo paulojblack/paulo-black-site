@@ -6,6 +6,7 @@ import messages from './messages';
 import Section from './Section';
 
 const IntroSectionWrapper = styled(Section)`
+
   text-align: center;
   padding-top: 300px;
   padding-left: 300px;
