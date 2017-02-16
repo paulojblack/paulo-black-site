@@ -8,11 +8,7 @@ import { defineMessages } from 'react-intl';
 export default defineMessages({
     introHeader: {
         id: 'app.components.HomePage.intro.header',
-        defaultMessage: 'Paulo Comin thru',
-    },
-    introCoolguy: {
-        id: 'app.components.HomePage.intro.coolguy',
-        defaultMessage: 'Yo I made all this cool stuff check out this cool stuff.',
+        defaultMessage: 'Paulo\'s Boilerplate',
     },
     introBody: {
         id: 'app.components.HomePage.intro.body',

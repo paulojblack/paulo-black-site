@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { FormattedMessage } from 'react-intl';
 
 import A from 'components/A';
+import SocialIcons from 'components/SocialIcons';
 import LocaleToggle from 'containers/LocaleToggle';
 import Wrapper from './Wrapper';
 import messages from './messages';
@@ -28,6 +29,7 @@ function Footer() {
                 author: <A href="https://github.com/paulojblack">Paulo Black</A>,
             }}
           />
+          <SocialIcons />
         </LinkSection>
         <Section>
           <LocaleToggle />

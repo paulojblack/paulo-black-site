@@ -32,9 +32,6 @@ export function IntroSection() {
             <FormattedMessage {...messages.introHeader} />
           </H1>
           <p>
-            <FormattedMessage {...messages.introCoolguy} />
-          </p>
-          <p>
             <FormattedMessage {...messages.introBody} />
           </p>
         </section>
