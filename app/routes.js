@@ -34,34 +34,6 @@ export default function createRoutes(store) {
         importModules.catch(errorLoading);
       },
     }, {
-      path: 'papers',
-      name: 'papers',
-      getComponent(location, cb) {
-        import('containers/Papers')
-          .then(loadModule(cb))
-          .catch(errorLoading);
-      },
-    }, {
-      path: 'inputs',
-      name: 'inputs',
-      getComponent(nextState, cb) {
-        const importModules = Promise.all([
-          import('containers/Inputs/reducer'),
-          import('containers/Inputs/sagas'),
-          import('containers/Inputs'),
-        ]);
-
-        const renderRoute = loadModule(cb);
-
-        importModules.then(([reducer, sagas, component]) => {
-          injectReducer('inputs', reducer.default);
-          injectSagas(sagas.default);
-          renderRoute(component);
-        });
-
-        importModules.catch(errorLoading);
-      },
-    }, {
       path: '*',
       name: 'notfound',
       getComponent(nextState, cb) {

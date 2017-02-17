@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const Section = styled.section`
   min-height: 500px;
-  text-align: left;
+  text-align: -webkit-center;
   display: flex;
   justify-content: space-between;
 `;

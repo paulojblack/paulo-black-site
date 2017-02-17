@@ -1,8 +1,6 @@
-import { Link } from 'react-router';
 import styled from 'styled-components';
 
-// font-size: 16px;
-export default styled(Link)`
+export default styled.a`
   display: inline-flex;
   padding: 0.25em 2em;
   margin: 1em;

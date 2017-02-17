@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { FaGithub, FaLinkedin } from 'react-icons/lib/fa';
+import { FaGithub, FaLinkedinSquare } from 'react-icons/lib/fa';
 import MdMail from 'react-icons/lib/md/mail-outline';
 
 import Wrapper from './Wrapper';
@@ -12,13 +12,13 @@ class SocialIcons extends React.PureComponent { // eslint-disable-line react/pre
           <Wrapper>
 
             <a href="https://github.com/paulojblack" >
-              <FaGithub color="#333" size={30} />
+              <FaGithub color="#333" size={45} />
             </a>
             <a href="https://www.linkedin.com/in/paulo-black-0a131794/" >
-              <FaLinkedin color="#4875B4" size={30} />
+              <FaLinkedinSquare color="#0077B5" size={45} />
             </a>
             <a href="mailto:pjblack@email.wm.edu" >
-              <MdMail color="#C63D2D" size={30} />
+              <MdMail color="#C63D2D" size={45} />
             </a>
 
           </Wrapper>
