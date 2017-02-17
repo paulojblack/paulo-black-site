@@ -6,24 +6,24 @@
 import { defineMessages } from 'react-intl';
 
 export default defineMessages({
-  home: {
-    id: 'boilerplate.components.Header.home',
-    defaultMessage: 'Home',
-  },
-  boilerplate: {
-    id: 'boilerplate.components.Header.boilerplate',
-    defaultMessage: 'Boilerplate',
-  },
-  template: {
-    id: 'boilerplate.components.Header.template',
-    defaultMessage: 'Inputs',
-  },
-  default: {
-    id: 'boilerplate.components.Header.default',
-    defaultMessage: 'Default',
-  },
-  other: {
-    id: 'boilerplate.components.Header.other',
-    defaultMessage: 'Other',
-  },
+    home: {
+        id: 'boilerplate.components.Header.home',
+        defaultMessage: 'Home',
+    },
+    boilerplate: {
+        id: 'boilerplate.components.Header.boilerplate',
+        defaultMessage: 'Boilerplate',
+    },
+    tutorials: {
+        id: 'boilerplate.components.Header.tutorials',
+        defaultMessage: 'Tutorials',
+    },
+    blog: {
+        id: 'boilerplate.components.Header.blog',
+        defaultMessage: 'Blog',
+    },
+    aboutme: {
+        id: 'boilerplate.components.Header.aboutme',
+        defaultMessage: 'About Me',
+    },
 });

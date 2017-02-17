@@ -22,14 +22,14 @@ class Header extends React.Component { // eslint-disable-line react/prefer-state
               <HeaderLink href="https://boils.pauloblack.com">
                 <FormattedMessage {...messages.boilerplate} />
               </HeaderLink>
-              <HeaderLink to="/inputs">
-                <FormattedMessage {...messages.template} />
+              <HeaderLink href="https://tutorials.pauloblack.com">
+                <FormattedMessage {...messages.tutorials} />
               </HeaderLink>
-              <HeaderLink to="/default">
-                <FormattedMessage {...messages.default} />
+              <HeaderLink href="https://blog.pauloblack.com">
+                <FormattedMessage {...messages.blog} />
               </HeaderLink>
-              <HeaderLink to="/other">
-                <FormattedMessage {...messages.other} />
+              <HeaderLink href="https://aboutme.pauloblack.com">
+                <FormattedMessage {...messages.aboutme} />
               </HeaderLink>
             </NavBar>
           </div>
