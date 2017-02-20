@@ -1,20 +1,21 @@
-/**
-*
-* Header
-*
-*/
-
 import React from 'react';
 import { FormattedMessage } from 'react-intl';
+import styled from 'styled-components';
+
+import { Column } from 'hedron';
 
 import NavBar from './NavBar';
 import HeaderLink from './HeaderLink';
 import messages from './messages';
 
+const HeaderColumn = styled(Column)`
+  padding-top: 0px;
+`;
+
 class Header extends React.Component { // eslint-disable-line react/prefer-stateless-function
     render() {
         return (
-          <div>
+          <HeaderColumn>
             <NavBar>
               <HeaderLink href="https://www.pauloblack.com">
                 <FormattedMessage {...messages.home} />
@@ -32,7 +33,7 @@ class Header extends React.Component { // eslint-disable-line react/prefer-state
                 <FormattedMessage {...messages.aboutme} />
               </HeaderLink>
             </NavBar>
-          </div>
+          </HeaderColumn>
         );
     }
 }

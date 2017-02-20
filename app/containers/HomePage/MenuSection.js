@@ -1,27 +1,30 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import { Row, Column } from 'hedron';
 import Header from 'components/Header';
 import H3 from 'components/H3';
-import Section from './Section';
 
-const MenuSectionWrapper = styled(Section)`
-  display: block;
-  padding-top: 100px;
-  padding-left: 300px;
-  padding-right: 300px;
+const MenuRow = styled(Row)`
+  padding-top: 150px;
 `;
+
+const TextColumn = styled(Column)`
+  padding: 0px;
+`;
+
 
 export function MenuSection() {
     return (
-      <MenuSectionWrapper>
-        <section>
+      <MenuRow>
+        <TextColumn sm={8} smShift={2} lg={6} lgShift={3}>
           <H3>
             Take a look around!
           </H3>
-          <Header />
-        </section>
-      </MenuSectionWrapper>
+        </TextColumn>
+
+        <Header />
+      </MenuRow>
     );
 }
 
