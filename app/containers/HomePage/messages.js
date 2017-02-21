@@ -10,6 +10,12 @@ export default defineMessages({
         id: 'app.components.HomePage.intro.header',
         defaultMessage: 'Paulo Black',
     },
+    introConst: {
+        id: 'app.components.HomePage.intro.construction',
+        defaultMessage: `
+        This site is under construction!
+        `,
+    },
     introBody: {
         id: 'app.components.HomePage.intro.body',
         defaultMessage: `
