@@ -34,7 +34,7 @@ export default defineMessages({
         That said, I have unnecessarily strong opinions (which I am both unqualified to hold
         and always prepared to offer without solicitation) on contemporary cultural perspectives
         that I see as being foolishly critical of the quality of writing or literacy in general,
-        what constitutes "good writing and the relationship that has with social
+        what constitutes "good writing" and the relationship that has with social
         self examination as regards intelligence or the status of our culture as a whole.
         I've decided this very second to not bother expounding on them here, but
         rather let this paragraph sort of dissipate inconclusively to serve as a demonstration of the
@@ -86,8 +86,8 @@ export default defineMessages({
         I wonder if the "you" I've been addressing this to will ever exist. I suspect not, but
         I am constantly surprised at the unpredictability of what other people are interested in.
         If you are "you", you really ought to just click the mail icon on the home page and get
-        in touch, I don't see why you'd waste all this time reading my nonsense and then not bother
-        saying hi.
+        in touch, I don't see why you'd waste all this time reading some guy talk
+        about nothing and then not bother saying hi.
         `,
     },
 });
