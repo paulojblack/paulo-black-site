@@ -37,6 +37,10 @@ class Header extends React.Component { // eslint-disable-line react/prefer-state
         //  <HeaderLink href="https://tutorials.pauloblack.com" >
         //     <FormattedMessage {...messages.tutorials} />
         //   </HeaderLink>
+        //
+        //   <HeaderLink href="https://blog.pauloblack.com" >
+        //   <FormattedMessage {...messages.blog} />
+        // </HeaderLink>
     render() {
         return (
           <HeaderColumn>
@@ -44,11 +48,8 @@ class Header extends React.Component { // eslint-disable-line react/prefer-state
               <HeaderLink id="tooltip" to="/" >
                 <FormattedMessage {...messages.home} />
               </HeaderLink>
-              <HeaderLink href="https://boils.pauloblack.com" >
+              <HeaderLink href="https://boilerplate.pauloblack.com" >
                 <FormattedMessage {...messages.boilerplate} />
-              </HeaderLink>
-              <HeaderLink href="https://blog.pauloblack.com" >
-                <FormattedMessage {...messages.blog} />
               </HeaderLink>
               <HeaderLink to="/aboutme" >
                 <FormattedMessage {...messages.aboutme} />
