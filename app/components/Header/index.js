@@ -28,26 +28,26 @@ class Header extends React.Component { // eslint-disable-line react/prefer-state
             tooltipOpen: !this.state.tooltipOpen,
         });
     }
+        //  <HeaderLink href="https://tutorials.pauloblack.com" >
+        //     <FormattedMessage {...messages.tutorials} />
+        //   </HeaderLink>
     render() {
         return (
           <HeaderColumn>
             <NavBar>
-              <HeaderLink id="tooltip" href="https://www.pauloblack.com">
+              <HeaderLink id="tooltip" to="/" >
                 <FormattedMessage {...messages.home} />
                 <Tooltip placement="left" isOpen={this.state.tooltipOpen} target="tooltip" toggle={this.toggle}>
-                Blep
+                TestToolTip
                 </Tooltip>
               </HeaderLink>
-              <HeaderLink href="https://boils.pauloblack.com">
+              <HeaderLink href="https://boils.pauloblack.com" >
                 <FormattedMessage {...messages.boilerplate} />
               </HeaderLink>
-              <HeaderLink href="https://tutorials.pauloblack.com">
-                <FormattedMessage {...messages.tutorials} />
-              </HeaderLink>
-              <HeaderLink href="https://blog.pauloblack.com">
+              <HeaderLink href="https://blog.pauloblack.com" >
                 <FormattedMessage {...messages.blog} />
               </HeaderLink>
-              <HeaderLink href="https://aboutme.pauloblack.com">
+              <HeaderLink to="/aboutme" >
                 <FormattedMessage {...messages.aboutme} />
               </HeaderLink>
             </NavBar>
