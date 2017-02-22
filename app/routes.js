@@ -33,9 +33,18 @@ export default function createRoutes(store) {
             importModules.catch(errorLoading);
         },
     }, {
+        path: '/blep',
+        name: 'blep',
+        getComponent(nextState, cb) {
+            import('containers/HomePage')
+            .then(loadModule(cb))
+            .catch(errorLoading);
+        },
+    }, {
+    }, {
         path: '/aboutme',
         name: 'aboutMe',
-        getComponent(location, cb) {
+        getComponent(nextState, cb) {
             import('containers/AboutMe')
             .then(loadModule(cb))
             .catch(errorLoading);
