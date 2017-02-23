@@ -36,9 +36,17 @@ export default function createRoutes(store) {
         path: '/blep',
         name: 'blep',
         getComponent(nextState, cb) {
-            import('containers/HomePage')
-            .then(loadModule(cb))
-            .catch(errorLoading);
+            const importModules = Promise.all([
+                import('containers/HomePage'),
+            ]);
+
+            const renderRoute = loadModule(cb);
+
+            importModules.then(([component]) => {
+                renderRoute(component);
+            });
+
+            importModules.catch(errorLoading);
         },
     }, {
     }, {
