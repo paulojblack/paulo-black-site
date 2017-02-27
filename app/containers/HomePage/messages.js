@@ -10,20 +10,22 @@ export default defineMessages({
         id: 'app.components.HomePage.intro.header',
         defaultMessage: 'Paulo Black',
     },
-    introConst: {
-        id: 'app.components.HomePage.intro.construction',
+    introFirst: {
+        id: 'app.components.HomePage.intro.first',
         defaultMessage: `
-        This site is under construction!
+        Full Stack Web Developer
         `,
     },
-    introBody: {
-        id: 'app.components.HomePage.intro.body',
+    introSecond: {
+        id: 'app.components.HomePage.intro.second',
         defaultMessage: `
-        Full Stack Web Developer specializing in enterprise scale API design, front end
-        design with React.js. I'm primarily interested in modern web architecture and infrastructure, DevOps
-        culture, development tooling, distributed systems and task, build and deployment automation.
-        To get in touch about private contracting, open source collaboration, or just to say hi, don't
-        hesitate to get in touch with me via Github, Linkedin, or email!
+        Specialist in enterprise scale API design, DevOps infrastructure, and front end design with React.js
+        `,
+    },
+    introThird: {
+        id: 'app.components.HomePage.intro.third',
+        defaultMessage: `
+        Available for private contracting, open source collaboration, and independent consulting
         `,
     },
 });

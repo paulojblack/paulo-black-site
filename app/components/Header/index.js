@@ -3,7 +3,6 @@ import { FormattedMessage } from 'react-intl';
 import styled from 'styled-components';
 
 import { Column } from 'hedron';
-// import { Tooltip } from 'reactstrap';
 
 import NavBar from './NavBar';
 import HeaderLink from './HeaderLink';
@@ -28,19 +27,14 @@ class Header extends React.Component { // eslint-disable-line react/prefer-state
             tooltipOpen: !this.state.tooltipOpen,
         });
     }
-      // <HeaderLink id="tooltip" to="/" >
-      //   <FormattedMessage {...messages.home} />
-      //   <Tooltip placement="left" isOpen={this.state.tooltipOpen} target="tooltip" toggle={this.toggle}>
-      //   TestToolTip
-      //   </Tooltip>
+
+      //  <HeaderLink href="https://tutorials.pauloblack.com" >
+      //     <FormattedMessage {...messages.tutorials} />
+      //   </HeaderLink>
+      //
+      //   <HeaderLink href="https://blog.pauloblack.com" >
+      //   <FormattedMessage {...messages.blog} />
       // </HeaderLink>
-        //  <HeaderLink href="https://tutorials.pauloblack.com" >
-        //     <FormattedMessage {...messages.tutorials} />
-        //   </HeaderLink>
-        //
-        //   <HeaderLink href="https://blog.pauloblack.com" >
-        //   <FormattedMessage {...messages.blog} />
-        // </HeaderLink>
     render() {
         return (
           <HeaderColumn>
@@ -50,9 +44,6 @@ class Header extends React.Component { // eslint-disable-line react/prefer-state
               </HeaderLink>
               <HeaderLink href="https://boilerplate.pauloblack.com" >
                 <FormattedMessage {...messages.boilerplate} />
-              </HeaderLink>
-              <HeaderLink to="/aboutme" >
-                <FormattedMessage {...messages.aboutme} />
               </HeaderLink>
             </NavBar>
           </HeaderColumn>

@@ -12,6 +12,15 @@ const H1 = styled.h1`
   margin-bottom: 0.25em;
 `;
 
+// const Circle = styled.div`
+//   width: 100px;
+//   height: 100px;
+//   background: rgba(76, 175, 80, 0.3)
+//   -moz-border-radius: 50px;
+//   -webkit-border-radius: 50px;
+//   border-radius: 50px;
+// `;
+
 const TextRow = styled(Row)`
   text-align: center;
   padding-top: 100px;
@@ -20,16 +29,20 @@ const TextRow = styled(Row)`
 export function IntroSection() {
     return (
       <TextRow >
-        <Row>
-          <Column >
-            <H1>
-              <FormattedMessage {...messages.introHeader} />
-            </H1>
-            <p>
-              <FormattedMessage {...messages.introBody} />
-            </p>
-          </Column>
-        </Row>
+        <Column >
+          <H1>
+            <FormattedMessage {...messages.introHeader} />
+          </H1>
+          <p>
+            <FormattedMessage {...messages.introFirst} />
+          </p>
+          <p>
+            <FormattedMessage {...messages.introSecond} />
+          </p>
+          <p>
+            <FormattedMessage {...messages.introThird} />
+          </p>
+        </Column>
 
         <SocialIcons />
       </TextRow>
