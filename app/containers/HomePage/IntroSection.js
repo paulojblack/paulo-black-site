@@ -18,7 +18,7 @@ const Circle = styled.div`
   transform: translate(-50%, 0%);
   height: 600px;
   width: 100%;
-  background: rgba(74, 150, 173, 1.0)
+  background: rgba(25, 25, 25, 0.6)
 `;
 
 const SubCircle = styled.div`

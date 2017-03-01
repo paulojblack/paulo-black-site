@@ -7,7 +7,7 @@ injectGlobal`
   body {
     height: 100%;
     width: 100%;
-    background-color: #191919;
+    background-color: rgba(74, 150, 173, 1.0);
   }
 
   body {
@@ -22,13 +22,13 @@ injectGlobal`
 
   @keyframes fadeIn {
     from {
-      background: rgba(74, 150, 173, 0);
+      background: rgba(25, 25, 25, 0);
       height:500px;
       width:500px;
       border-radius: 250px;
     }
     to {
-      background: rgba(74, 150, 173, 1.0);
+      background: rgba(25, 25, 25, 0.6);
       height:500px;
       width:500px;
       border-radius: 250px;
