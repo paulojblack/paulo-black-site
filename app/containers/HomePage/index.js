@@ -3,7 +3,6 @@ import Helmet from 'react-helmet';
 
 import SocialIcons from 'components/SocialIconsFixed';
 import IntroSection from './IntroSection';
-// import MenuSection from './MenuSection';
 
 export default class HomePage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
     render() {

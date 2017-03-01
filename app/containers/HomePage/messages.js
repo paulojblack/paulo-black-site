@@ -19,13 +19,13 @@ export default defineMessages({
     introSecond: {
         id: 'app.components.HomePage.intro.second',
         defaultMessage: `
-        Specialist in enterprise scale API design, DevOps infrastructure, and front end design with React.js
+        Specialist in enterprise scale API design and DevOps infrastructure
         `,
     },
     introThird: {
         id: 'app.components.HomePage.intro.third',
         defaultMessage: `
-        Available for private contracting, open source collaboration, and independent consulting
+        Available for private contracting, collaboration, and consulting
         `,
     },
 });

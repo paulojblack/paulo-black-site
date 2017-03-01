@@ -2,8 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 import { FormattedMessage } from 'react-intl';
 
-import { Row, Column } from 'hedron';
-// import SocialIcons from 'components/SocialIcons';
 import messages from './messages';
 
 const H1 = styled.h1`
@@ -13,14 +11,13 @@ const H1 = styled.h1`
 `;
 
 const Circle = styled.div`
-  animation: fadeIn 5s;
+  animation: fadeIn 3s, circleToDiv 2s 3s;
   position: relative;
   top: 50%;
   left: 50%;
   transform: translate(-50%, 0%);
-  border-radius: 250px;
-  height: 500px;
-  width: 500px;
+  height: 600px;
+  width: 100%;
   background: rgba(74, 150, 173, 1.0)
 `;
 
