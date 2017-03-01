@@ -8,31 +8,23 @@
 
 import React from 'react';
 import Helmet from 'react-helmet';
-import styled from 'styled-components';
 
 import { Page } from 'hedron';
 import withProgressBar from 'components/ProgressBar';
 
 
-// const AppWrapper = styled.div`
-//   margin: 0 auto;
-//   display: flex;
-//   min-height: 100%;
-//   flex-direction: column;
-// `;
-
 export function App(props) {
     return (
-      <Page>
+      <div>
         <Helmet
-          titleTemplate="%s - PauloPlate"
-          defaultTitle="PauloPlate React"
+          titleTemplate="%s - Homepage"
+          defaultTitle="Paulo Black"
           meta={[
-            { name: 'description', content: 'Paulo\'s boilerplate' },
+            { name: 'description', content: 'PauloPlace' },
           ]}
         />
         {React.Children.toArray(props.children)}
-      </Page>
+      </div>
     );
 }
 
