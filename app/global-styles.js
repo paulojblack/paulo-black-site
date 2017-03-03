@@ -1,13 +1,12 @@
 import { injectGlobal } from 'styled-components';
 
 /* eslint no-unused-expressions: 0 */
-// background: -webkit-linear-gradient(top, rgba(74, 150, 173, 0.46) 0%,rgba(74, 150, 173, 0.46) 100%), repeat 0 0;
 injectGlobal`
   html,
   body {
     height: 100%;
     width: 100%;
-    background-color: rgba(74, 150, 173, 1.0);
+    background-color: #DFE2DB;
   }
 
   body {
@@ -22,13 +21,13 @@ injectGlobal`
 
   @keyframes fadeIn {
     from {
-      background: rgba(25, 25, 25, 0);
+      background: rgba(85, 140, 137, 0);
       height:500px;
       width:500px;
       border-radius: 250px;
     }
     to {
-      background: rgba(25, 25, 25, 0.6);
+      background: rgba(85, 140, 137, 1);
       height:500px;
       width:500px;
       border-radius: 250px;
@@ -43,7 +42,6 @@ injectGlobal`
     }
     to {
       border-radius: 0px;
-      height:600px;
       width: 100%;
     }
   }

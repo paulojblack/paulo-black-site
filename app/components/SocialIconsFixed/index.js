@@ -10,11 +10,10 @@ const Icon = styled.a`
 `;
 
 const IconDiv = styled.div`
-  padding-top: 40px;
+  padding-top: 200px;
   position: fixed;
   width: 100%;
   height: 100%;
-  background: #DFE2DB;
 `;
 
 class SocialIcons extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function

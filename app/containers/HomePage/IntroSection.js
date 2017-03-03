@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { FormattedMessage } from 'react-intl';
 
+import SocialIcons from 'components/SocialIconsFixed';
 import messages from './messages';
 
 const H1 = styled.h1`
@@ -11,14 +12,15 @@ const H1 = styled.h1`
 `;
 
 const Circle = styled.div`
-  animation: fadeIn 3s, circleToDiv 2s 3s;
+  animation: fadeIn 1s, circleToDiv 1s 0.8s;
   position: relative;
   top: 50%;
   left: 50%;
   transform: translate(-50%, 0%);
-  height: 600px;
+  height: 500px;
+  bottom: 100%
   width: 100%;
-  background: rgba(25, 25, 25, 0.6)
+  background: rgba(85, 140, 137, 1);
 `;
 
 const SubCircle = styled.div`
@@ -27,7 +29,7 @@ const SubCircle = styled.div`
 `;
 
 const MyWrapper = styled.div`
-  padding-top: 50px;
+  padding-top: 100px;
 `;
 
 export function IntroSection() {
@@ -48,6 +50,7 @@ export function IntroSection() {
               <FormattedMessage {...messages.introThird} />
             </p>
           </SubCircle>
+          <SocialIcons />
         </Circle>
 
       </MyWrapper>
